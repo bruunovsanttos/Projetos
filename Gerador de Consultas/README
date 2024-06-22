@@ -1,4 +1,4 @@
-#Gerador de Consultas#
+# Gerador de Consultas
 Este projeto tem como finalidade criar uma solução para uma Ubs de um bairro.
 Antes deste projeto a Ubs não possuia sistemas para marcação de consultas, tudo era feito manualmente.
 Com este cenário alguns contratempos eram gerados, como: consultas duplicadas, cancelamento de consultas, cadastros repetidos para o mesmo pacinete.
@@ -11,17 +11,17 @@ Nesse cenário foi pensada a solução criando algumas funções para:
  -Desmarcar Consultas
     Desmarcar consultas.
 
-##Tecnologias Utilizadas##
+## Tecnologias Utilizadas
 Estre projeto tem como base a linguagem Python, utilizando suas bibliotecas e funções.
 
-###Estruturas de Linguagem Utilizadas###
+### Estruturas de Linguagem Utilizadas
 -Condicionais
 -Repetição
 -Listas
 -Dicionarios
 -Funções
 
-###_*Bíbliotecas Utilizadas*_
+### *_Bíbliotecas Utilizadas_*
 -Datetime
 -Enumerate
 
