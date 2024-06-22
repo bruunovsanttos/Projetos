@@ -39,7 +39,7 @@ def marcar_consulta():
     # Peça ao usuário para escolher um paciente a partir da lista.
     listar_pacientes()
     paciente_escolhido = int(input("Escolha um paciente para marcar consulta:"))
-    confirmacao = int(input(f"O paciente escolhido foi {paciente_escolhido}? 1 - Sim 2 - Não"))
+    confirmacao = int(input(f"O paciente escolhido foi {paciente_escolhido}? 1-Sim 2-Não"))
 
     if confirmacao == 1:
         # Solicite a data, hora e especialidade desejada.
@@ -73,18 +73,35 @@ def marcar_consulta():
         print("não foi possivel agendar, tente novamente.")
         return
 
+def listar_consultas():
+    for indice, consulta in enumerate(consultas):
+        print(f"{indice}: {consulta["paciente"], consulta["data"], consulta["hora"],consulta["especialidade"]}")
 
 
 
-
-
-def cancelar_consulta():
-    pass
 #5. Cancelar uma Consulta
-#Exiba a lista numerada de agendamentos existentes.
-#Peça ao usuário para escolher um agendamento a partir da lista.
-#Exiba os detalhes da consulta selecionada.
-#Pergunte ao usuário se ele deseja cancelar a consulta.
+def cancelar_consulta():
+    # Exiba a lista numerada de agendamentos existentes.
+    listar_consultas()
+    # Peça ao usuário para escolher um agendamento a partir da lista.
+    consulta_cancelar = int(input(f"Qual consulta deseja cancelar?: "))
+    # Exiba os detalhes da consulta selecionada.
+    # Pergunte ao usuário se ele deseja cancelar a consulta.
+    confirmacao = int(input(f"A consulta {consulta_cancelar}é a que deseja cancelar?: 1-Sim 2-Não"))
+    
+    # Se sim, remova o agendamento da lista e exiba uma mensagem de confirmação
+    if confirmacao == 1:
+        #aqui vou ter que utilizar o pop com o indice da consulta para cancelar
+
+    elif confirmacao == 2:
+        print("Não foi possível cancelar a consulta, tente novamente...")
+
+
+
+
+
+
+
 #Se sim, remova o agendamento da lista e exiba uma mensagem de confirmação.
 #Se não, retorne ao menu principal.
 
